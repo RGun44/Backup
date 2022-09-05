@@ -14,10 +14,10 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".NextActivity"
+            android:name=".HomePenggunaActivity"
             android:exported="false" />
         <activity
             android:name=".SignUp"
