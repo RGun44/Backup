@@ -25,16 +25,22 @@ class LoginActivity : AppCompatActivity() {
         inputUsername = findViewById(R.id.inputLayoutUsername)
         inputPassword = findViewById(R.id.inputLayoutPassword)
         mainLayout = findViewById(R.id.mainLayout)
-        getBundle()
+
+        var intent : Intent = intent
+        if(intent.hasExtra("SIGNUP")) {
+            getBundle()
+        }
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
-        val btnClear = findViewById<Button>(R.id.btnClear)
+        val btnRegistrasi = findViewById<Button>(R.id.btnRegistrasi)
 
-        btnClear.setOnClickListener {
+        btnRegistrasi.setOnClickListener {
             inputUsername.getEditText()?.setText("")
             inputPassword.getEditText()?.setText("")
 
             Snackbar.make(mainLayout, "Text Cleared Success", Snackbar.LENGTH_LONG).show()
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
         }
 
         btnLogin.setOnClickListener OnClickListener@{

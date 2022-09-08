@@ -80,12 +80,13 @@ class SignUp : AppCompatActivity() {
             if(username == "admin" && password == "0557") checkSignUp = true
             if(!checkSignUp)return@OnClickListener
             val moveHome = Intent( this@SignUp, LoginActivity::class.java)
-            startActivity(moveHome)
 
             val mBundle = Bundle()
-            mBundle.putString("username" , inputUsername.getEditText()?.toString())
-            mBundle.putString("password" , inputPassword.getEditText()?.toString())
-            intent.putExtra("SIGNUP", mBundle)
+            mBundle.putString("username" , username)
+            mBundle.putString("password" , password)
+            moveHome.putExtra("SIGNUP", mBundle)
+
+            startActivity(moveHome)
         })
     }
 }
