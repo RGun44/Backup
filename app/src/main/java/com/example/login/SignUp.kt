@@ -29,12 +29,11 @@ class SignUp : AppCompatActivity() {
         setTitle("User Login")
         inputUsername = findViewById(R.id.signup)
         inputPassword = findViewById(R.id.enterpassword)
-        inputBirthDate = findViewById(R.id.etbirthdate)
-        inputEmail = findViewById(R.id.etemail)
-        inputPhoneNumber = findViewById(R.id.etphone)
-        mainLayout = findViewById(R.id.mainLayout)
+        inputBirthDate = findViewById(R.id.birthdate)
+        inputEmail = findViewById(R.id.emailsignup)
+        inputPhoneNumber = findViewById(R.id.phonenumber)
         val btnClear: Button = findViewById(R.id.btnClear)
-        val btnSignUp: Button = findViewById(R.id.btnLogin)
+        val btnSignUp: Button = findViewById(R.id.btnSignUp)
 
         btnClear.setOnClickListener {
             inputUsername.getEditText()?.setText("")
@@ -84,8 +83,8 @@ class SignUp : AppCompatActivity() {
             startActivity(moveHome)
 
             val mBundle = Bundle()
-            mBundle.putString("username" , username.toString())
-            mBundle.putString("password" , password.toString())
+            mBundle.putString("username" , inputUsername.getEditText()?.toString())
+            mBundle.putString("password" , inputPassword.getEditText()?.toString())
             intent.putExtra("SIGNUP", mBundle)
         })
     }
