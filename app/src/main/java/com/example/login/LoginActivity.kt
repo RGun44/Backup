@@ -29,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
         var intent : Intent = intent
         if(intent.hasExtra("SIGNUP")) {
             getBundle()
+            setText()
         }
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
@@ -61,9 +62,6 @@ class LoginActivity : AppCompatActivity() {
             if(!checkLogin)return@OnClickListener
             val intent = Intent(this, HomePenggunaActivity::class.java)
             startActivity(intent)
-
-            if(username == vUsername && password == vPassword)
-                setText()
         }
 
     }

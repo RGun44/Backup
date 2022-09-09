@@ -32,6 +32,7 @@ class SignUp : AppCompatActivity() {
         inputBirthDate = findViewById(R.id.birthdate)
         inputEmail = findViewById(R.id.emailsignup)
         inputPhoneNumber = findViewById(R.id.phonenumber)
+        mainLayout = findViewById(R.id.mainLayout)
         val btnClear: Button = findViewById(R.id.btnClear)
         val btnSignUp: Button = findViewById(R.id.btnSignUp)
 
@@ -53,31 +54,31 @@ class SignUp : AppCompatActivity() {
             val email: String = inputEmail.getEditText()?.getText().toString()
             val phoneNumber: String = inputPhoneNumber.getEditText()?.getText().toString()
 
+
             if(username.isEmpty()){
                 inputUsername.setError("Username must be filled with text")
                 checkSignUp = false
             }
-
-            if(password.isEmpty()){
+            else if(password.isEmpty()){
                 inputPassword.setError("Password must be filled with text")
                 checkSignUp = false
             }
-
-            if(birthdate.isEmpty()){
+            else if(birthdate.isEmpty()){
                 inputBirthDate.setError("Birth Date must be filled with text")
                 checkSignUp = false
             }
-
-            if(email.isEmpty()){
+            else if(email.isEmpty()){
                 inputEmail.setError("Email must be filled with text")
                 checkSignUp = false
             }
-
-            if(phoneNumber.isEmpty()){
+            else if(phoneNumber.isEmpty()){
                 inputPhoneNumber.setError("Phone Number must be filled with text")
                 checkSignUp = false
             }
-            if(username == "admin" && password == "0557") checkSignUp = true
+            else {
+                checkSignUp = true
+            }
+
             if(!checkSignUp)return@OnClickListener
             val moveHome = Intent( this@SignUp, LoginActivity::class.java)
 

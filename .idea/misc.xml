@@ -7,14 +7,12 @@
         <entry key="..\:/Belajar/Login/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2275" />
         <entry key="..\:/Belajar/Login/app/src/main/res/drawable/ic_logo_1_background.xml" value="0.2275" />
         <entry key="..\:/Belajar/Login/app/src/main/res/drawable/ic_vector_4.xml" value="0.2275" />
+        <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_home_pengguna.xml" value="0.23007246376811594" />
         <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_log_in.xml" value="0.23007246376811594" />
         <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_next.xml" value="0.23007246376811594" />
-        <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_sign_up.xml" value="0.4" />
-        <entry key="..\:/Users/ASUS-/AndroidStudioProjects/Backup/app/src/main/res/layout/activity_home_pengguna.xml" value="0.1796875" />
-        <entry key="..\:/Users/ASUS-/AndroidStudioProjects/Backup/app/src/main/res/layout/activity_log_in.xml" value="0.1796875" />
-        <entry key="..\:/Users/ASUS-/AndroidStudioProjects/Backup/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Belajar/Login/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
       </map>
     </option>
   </component>

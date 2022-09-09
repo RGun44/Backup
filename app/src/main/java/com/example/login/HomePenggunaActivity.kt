@@ -6,6 +6,6 @@ import android.os.Bundle
 class HomePenggunaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home_pengguna)
+        setContentView(R.layout.activity_home)
     }
 }

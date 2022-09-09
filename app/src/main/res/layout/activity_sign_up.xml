@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".SignUp">
+    tools:context=".SignUp"
+    android:id="@+id/mainLayout">
 
     <ImageView
         android:id="@+id/imageView"
@@ -93,7 +94,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etphone"
-            android:hint="Phone Number" />
+            android:hint="Phone Number"
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -152,14 +154,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Register" />
+            android:text="Clear" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SIGN UP" />
+            android:text="Register" />
 
     </LinearLayout>
 
