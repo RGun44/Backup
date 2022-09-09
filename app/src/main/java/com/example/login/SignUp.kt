@@ -10,10 +10,10 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        val btnSubmit = findViewById<Button>(R.id.btnSignUp)
+        val btnSubmit = findViewById<Button>(R.id.btnsignup)
 
         btnSubmit.setOnClickListener {
-            val intent = Intent(this, HomePenggunaActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
