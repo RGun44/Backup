@@ -59,10 +59,6 @@ class SignUp : AppCompatActivity() {
                 inputUsername.setError("Username must be filled with text")
                 checkSignUp = false
             }
-            else if(password.isEmpty()){
-                inputPassword.setError("Password must be filled with text")
-                checkSignUp = false
-            }
             else if(birthdate.isEmpty()){
                 inputBirthDate.setError("Birth Date must be filled with text")
                 checkSignUp = false
@@ -73,6 +69,10 @@ class SignUp : AppCompatActivity() {
             }
             else if(phoneNumber.isEmpty()){
                 inputPhoneNumber.setError("Phone Number must be filled with text")
+                checkSignUp = false
+            }
+            else if(password.isEmpty()){
+                inputPassword.setError("Password must be filled with text")
                 checkSignUp = false
             }
             else {

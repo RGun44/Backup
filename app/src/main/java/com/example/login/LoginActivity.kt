@@ -63,7 +63,6 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, HomePenggunaActivity::class.java)
             startActivity(intent)
         }
-
     }
 
     fun getBundle(){

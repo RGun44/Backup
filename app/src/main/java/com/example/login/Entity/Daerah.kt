@@ -1,6 +1,6 @@
 package com.example.login.Entity
 
-class Daerah (var name: String, est_ongkir: Int) {
+class Daerah (var name: String, var est_ongkir: Int) {
 
     companion object {
         @JvmField
