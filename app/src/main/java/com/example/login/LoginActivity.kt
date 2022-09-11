@@ -60,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
             }
             if(username == "admin" && password == "0557") checkLogin = true
             if(!checkLogin)return@OnClickListener
-            val intent = Intent(this, HomePenggunaActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
